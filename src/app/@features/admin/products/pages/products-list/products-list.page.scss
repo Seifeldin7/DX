@@ -1,0 +1,13 @@
+.add-new {
+  text-align: end;
+}
+td {
+  img {
+    padding: 10px;
+  }
+  &.operations {
+    button {
+      margin: 0 5px;
+    }
+  }
+}

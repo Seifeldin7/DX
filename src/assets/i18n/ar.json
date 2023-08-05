@@ -1,0 +1,52 @@
+{
+	"buttons": {
+		"Login": "تسجيل الدخول",
+		"addnew": "اضافة جديد",
+		"create": "انشاء",
+		"update": "تحديث"
+	},
+	"columns": {
+		"category": "التصنيف",
+		"description": "الوصف",
+		"id": "المعرف",
+		"image": "الصورة",
+		"operations": "العمليات",
+		"price": "السعر",
+		"title": "العنوان"
+	},
+	"labels": {
+		"categories": "التصنيفات",
+	},
+	"messages": {
+		"productcreatedsuccessfully": "تم إنشاء المنتج بنجاح",
+		"productupdatedsuccessfuly": "تم تحديث المنتج بنجاح",
+		"successLogin": "تم تسجيل الدخول بنجاح"
+	},
+	"placeholders": {
+		"ProductCategory": "تصنيف المنتج",
+		"ProductDescription": "وصف المنتج",
+		"ProductImage": "صوره المنتج",
+		"ProductPrice": "سعر المنتج",
+		"ProductTitle": "عنوان المنتج",
+		"password": "كلمة المرور",
+		"username": "اسم المستخدم"
+	},
+	"titles": {
+		"Admin": "لوحة التحكم",
+		"Home": "الرئيسية",
+		"Welcome": "مرحبا",
+		"addnewproduct": "اضافة منتج جديد",
+		"editproduct": "تحديث منتج",
+		"login": "تسجيل الدخول",
+		"productsList": "قائمة المنتجات"
+	},
+	"validations": {
+		"Categoryisrequired": "ادخال القسم مطلوب",
+		"Descriptionisrequired": "الوصف مطلوب",
+		"Pleaseprovideavalidimageurl": "يرجى تقديم رابط صالح للصورة",
+		"Pleaseprovideavalidpassword": "الرجاء إدخال كلمة مرور صالحة",
+		"Pleaseprovideavalidprice": "الرجاء تقديم سعر صالح",
+		"Pleaseprovideavalidusername": "يرجى تقديم اسم مستخدم صالح",
+		"Titleisrequired": "العنوان مطلوب"
+	}
+}

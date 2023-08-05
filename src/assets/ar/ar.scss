@@ -1,0 +1,11 @@
+body[dir="rtl"] {
+  direction: rtl;
+  bar-rating {
+    .br-default .br-fraction:after {
+      right: 0;
+    }
+  }
+  .add-new {
+    text-align: left;
+  }
+}

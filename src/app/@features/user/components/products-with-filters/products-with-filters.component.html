@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-md-12">
+    <app-filters
+      [categories]="categories"
+      (onFilter)="filter($event)"
+    ></app-filters>
+  </div>
+</div>
+<div class="row">
+  <app-product-card
+    class="col-xl-3 col-lg-4 col-md-4 col-sm-6"
+    *ngFor="let product of _products"
+    [product]="product"
+  ></app-product-card>
+  <app-no-data [condition]="!_products.length && !loading"></app-no-data>
+</div>

@@ -1,0 +1,12 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>{{'titles.Home' | translate}}</h1>
+    </div>
+  </div>
+  <app-products-with-filters
+    [categories]="categories"
+    [loading]="loading"
+    [products]="products"
+  ></app-products-with-filters>
+</div>

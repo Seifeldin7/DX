@@ -1,0 +1,32 @@
+<div class="container mt-5">
+  <div class="row mb-3">
+    <div class="col-md-6">
+      <h1>{{ 'titles.productsList' | translate }}</h1>
+    </div>
+    <div class="col-md-6 add-new">
+      <button
+        pButton
+        type="button"
+        label="{{ 'buttons.addnew' | translate }}"
+        class="p-button-raised p-button-primary"
+        (click)="new()"
+      ></button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <p-table [value]="products" class="" [rows]="5"  [paginator]="true" [loading]="loading">
+        <ng-template pTemplate="header" let-columns>
+          <tr>
+            <th *ngFor="let col of displayedColumns">{{ col | translate }}</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-product>
+          <tr>
+            <td *ngFor="let col of displayedColumns">{{ product[col] }}</td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </div>
+  </div>
+</div>

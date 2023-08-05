@@ -1,0 +1,52 @@
+{
+	"buttons": {
+		"Login": "sign in",
+		"addnew": "add new",
+		"create": "create",
+		"update": "update"
+	},
+	"columns": {
+		"category": "categpry",
+		"description": "description",
+		"id": "Id",
+		"image": "Image",
+		"operations": "operations",
+		"price": "price",
+		"title": "title"
+	},
+	"labels": {
+		"categories": "categories"
+	},
+	"messages": {
+		"productcreatedsuccessfully": "Product created successfully",
+		"productupdatedsuccessfuly": "The product has been updated successfully",
+		"successLogin": "You have signed in successfully"
+	},
+	"placeholders": {
+		"ProductCategory": "Product Rating",
+		"ProductDescription": "Product Description",
+		"ProductImage": "Product picture",
+		"ProductPrice": "product price",
+		"ProductTitle": "Product title",
+		"password": "Password",
+		"username": "User name"
+	},
+	"titles": {
+		"Admin": "Dashboard",
+		"Home": "Home",
+		"Welcome": "Welcome",
+		"addnewproduct": "add new product",
+		"editproduct": "Product Update",
+		"login": "Log In",
+		"productsList": "Products List"
+	},
+	"validations": {
+		"Categoryisrequired": "category required",
+		"Descriptionisrequired": "Description Required",
+		"Pleaseprovideavalidimageurl": "Please provide a valid link to the image",
+		"Pleaseprovideavalidpassword": "Please enter a valid password",
+		"Pleaseprovideavalidprice": "Please provide a valid price",
+		"Pleaseprovideavalidusername": "Please provide a valid username",
+		"Titleisrequired": "Address is Required"
+	}
+}

@@ -1,0 +1,32 @@
+<div class="container">
+  <p-card>
+    <div class="p-card-content">
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <h2>{{ 'titles.login' | translate }}</h2>
+        <input formControlName="username" pInputText name="username" required />
+        <div class="p-invalid">
+          <small *ngIf="loginForm.controls['username'].invalid"
+            >{{ 'validations.Pleaseprovideavalidusername' | translate }}</small
+          >
+        </div>
+        <p-password
+          placeholder="{{ 'placeholders.password' | translate }}"
+          formControlName="password"
+          name="password"
+          required
+        ></p-password>
+        <div class="p-invalid">
+          <small *ngIf="loginForm.controls['password'].invalid"
+            >{{ 'validations.Pleaseprovideavalidpassword' | translate }}</small
+          >
+        </div>
+        <button
+          pButton
+          type="submit"
+          label="{{ 'buttons.Login' | translate }}"
+          class="p-button-raised p-button-primary"
+        ></button>
+      </form>
+    </div>
+  </p-card>
+</div>

@@ -1,0 +1,22 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="mb-5">
+        <label>{{ "labels.categories" | translate }}</label>
+        <p-dropdown
+          placeholder="category"
+          [options]="categories"
+          [(ngModel)]="selectedCategory"
+          (onChange)="filter()"
+        ></p-dropdown>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="mb-3">
+  <p-slider
+    (onChange)="filter()"
+    [(ngModel)]="selectedRange"
+    [range]="true"
+  ></p-slider>
+</div>

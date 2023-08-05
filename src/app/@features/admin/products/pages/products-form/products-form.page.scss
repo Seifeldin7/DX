@@ -1,0 +1,10 @@
+:host ::ng-deep {
+  textarea,
+  input {
+    width: 100%;
+  }
+}
+
+.invalid {
+  color: red;
+}
