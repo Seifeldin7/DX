@@ -3,7 +3,9 @@
 		"Login": "تسجيل الدخول",
 		"addnew": "اضافة جديد",
 		"create": "انشاء",
-		"update": "تحديث"
+		"update": "تحديث",
+    "logout": "تسجيل الخروج",
+    "changeLanguage": "تغيير اللغة"
 	},
 	"columns": {
 		"category": "التصنيف",

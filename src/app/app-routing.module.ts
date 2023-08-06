@@ -1,4 +1,3 @@
-import { LayoutComponent } from './@shared/components/layout/layout.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { isAdmin, isUser, loggedIn, loggedOut } from './@core/services/permissions/permissions.service';
@@ -6,7 +5,6 @@ import { isAdmin, isUser, loggedIn, loggedOut } from './@core/services/permissio
 const routes: Routes = [
   {
     path: '',
-    component: LayoutComponent,
     children: [
       {
         path: '',

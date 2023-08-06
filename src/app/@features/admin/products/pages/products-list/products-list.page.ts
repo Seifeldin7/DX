@@ -48,12 +48,12 @@ export class ProductsListPage {
     this.productsService.getAll();
   }
 
-  new() {
+  create() {
     this.router.navigate(['admin/products/add']);
   }
 
   edit(id: number) {
-    this.router.navigate(['admin/products/edit', id]);
+    this.router.navigate(['admin/products/edit/', id]);
   }
 
   delete(id: number) {

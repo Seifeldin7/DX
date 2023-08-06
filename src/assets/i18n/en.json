@@ -3,7 +3,9 @@
 		"Login": "sign in",
 		"addnew": "add new",
 		"create": "create",
-		"update": "update"
+		"update": "update",
+    "logout": "logout",
+    "changeLanguage": "Change Language"
 	},
 	"columns": {
 		"category": "categpry",

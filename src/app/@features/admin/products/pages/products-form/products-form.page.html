@@ -22,7 +22,7 @@
             pInputText
           />
           <div
-            *ngIf="productForm.controls['title'].dirty && productForm.controls['title'].invalid"
+            *ngIf="productForm.controls['title'].touched && productForm.controls['title'].invalid"
             class="invalid"
           >
             {{'validations.Titleisrequired' | translate}}
@@ -36,7 +36,7 @@
             pInputText
           />
           <div
-            *ngIf="productForm.controls['price'].dirty && productForm.controls['price'].invalid"
+            *ngIf="productForm.controls['price'].touched && productForm.controls['price'].invalid"
             class="invalid"
           >
             {{'validations.Pleaseprovideavalidprice' | translate}}
@@ -51,7 +51,7 @@
             pInputText
           />
           <div
-            *ngIf="productForm.controls['image'].dirty && productForm.controls['image'].invalid"
+            *ngIf="productForm.controls['image'].touched && productForm.controls['image'].invalid"
             class="invalid"
           >
             {{'validations.Pleaseprovideavalidimageurl' | translate}}
@@ -65,7 +65,7 @@
             required
           />
           <div
-            *ngIf="productForm.controls['category'].dirty && productForm.controls['category'].invalid"
+            *ngIf="productForm.controls['category'].touched && productForm.controls['category'].invalid"
             class="invalid"
           >
             {{'validations.Categoryisrequired' | translate}}
@@ -79,7 +79,7 @@
             required
           ></textarea>
           <div
-            *ngIf="productForm.controls['description'].dirty && productForm.controls['description'].invalid"
+            *ngIf="productForm.controls['description'].touched && productForm.controls['description'].invalid"
             class="invalid"
           >
             {{'validations.Descriptionisrequired' | translate}}

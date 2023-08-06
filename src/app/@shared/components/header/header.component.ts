@@ -9,6 +9,7 @@ import { LanguageService } from 'src/app/@core/services/language/language.servic
 })
 export class HeaderComponent {
   isLoggedIn: boolean = false;
+  language = 'ar'
 
   constructor(private authService: AuthService, public languageService: LanguageService) {
   }
@@ -20,5 +21,10 @@ export class HeaderComponent {
 
   logout() {
     this.authService.logout();
+  }
+
+  changeLang() {
+    this.language = this.language === 'ar' ? 'en' : 'ar';
+    this.languageService.changeLang(this.language);
   }
 }

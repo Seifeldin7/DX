@@ -10,10 +10,9 @@ import { TranslateModule } from '@ngx-translate/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { NoDataComponent } from '../../components/no-data/no-data.component';
-import { LayoutComponent } from '../../components/layout/layout.component';
 
 @NgModule({
-  declarations: [NoDataComponent, HeaderComponent, LayoutComponent],
+  declarations: [NoDataComponent, HeaderComponent],
   imports: [
     CommonModule,
     FormsModule,
@@ -32,12 +31,7 @@ import { LayoutComponent } from '../../components/layout/layout.component';
     NoDataComponent,
     TranslateModule,
     PrimeNGModule,
-  ],
-  providers: [
-    {
-      provide: PRECONNECT_CHECK_BLOCKLIST,
-      useValue: 'https://fakestoreapi.com',
-    },
+    HeaderComponent
   ],
 })
 export class SharedModule {}

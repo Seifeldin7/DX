@@ -1,3 +1,4 @@
+import { AdminLayoutComponent } from './components/layout/admin-layout.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -8,10 +9,11 @@ const routes: Routes = [
     pathMatch: 'full',
   },
   {
-    path: 'products',
+    path: '',
+    component: AdminLayoutComponent,
     children: [
       {
-        path: '',
+        path: 'products',
         loadChildren: () =>
           import('./products/products.module').then((m) => m.ProductsModule),
       },
