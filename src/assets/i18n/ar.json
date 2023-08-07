@@ -17,7 +17,8 @@
 		"title": "العنوان"
 	},
 	"labels": {
-		"categories": "التصنيفات"
+		"categories": "التصنيفات",
+    "price": "السعر"
 	},
 	"messages": {
 		"productcreatedsuccessfully": "تم إنشاء المنتج بنجاح",

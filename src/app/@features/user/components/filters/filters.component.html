@@ -12,6 +12,7 @@
   </div>
 </div>
 <div class="mb-3">
+  <label>{{ "labels.price" | translate }}</label>
   <input type="text" pInputText [(ngModel)]="selectedRange" class="w-100"/>
   <p-slider
     (onChange)="filter()"

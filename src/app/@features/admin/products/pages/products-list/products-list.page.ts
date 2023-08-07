@@ -61,6 +61,10 @@ export class ProductsListPage {
     this.productsService.deleteProduct(id);
   }
 
+  getColTranslation(col: string) {
+    return this.languageService.trans(`columns.${col}`);
+  }
+
   ngOnDestroy(): void {
     this.productsObservableSubscription.unsubscribe();
   }

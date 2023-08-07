@@ -24,7 +24,9 @@
       >
         <ng-template pTemplate="header" let-columns>
           <tr>
-            <th *ngFor="let col of displayedColumns">{{ col | translate }}</th>
+            <th *ngFor="let col of displayedColumns">
+              {{getColTranslation(col)}}
+            </th>
             <th></th>
           </tr>
         </ng-template>
