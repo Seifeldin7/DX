@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, Input } from '@angular/core';
 import { Product } from '../../../../@shared/interfaces/product/product.interface';
 
@@ -9,4 +10,9 @@ import { Product } from '../../../../@shared/interfaces/product/product.interfac
 export class ProductCardComponent {
   @Input() product!: Product;
 
+  constructor(private router: Router) {}
+
+  showProductDetails () {
+    this.router.navigate(['user', this.product.id]);
+  }
 }

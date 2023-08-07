@@ -53,6 +53,10 @@ export class ProductsService {
     });
   }
 
+  getProductById(id: number) {
+    return this.apiService.get(`${this.apiUrl}/${id}`);
+  }
+
   getProductsByCategory(category: string): Observable<Product[]> {
     return this.apiService.get(`${this.apiUrl}/category/${category}`);
   }

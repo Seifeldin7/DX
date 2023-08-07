@@ -1,5 +1,4 @@
 import { UserLayoutComponent } from './components/layout/user-layout.component';
-import { HomePage } from './home/pages/home.page';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 

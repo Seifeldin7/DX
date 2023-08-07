@@ -20,7 +20,7 @@ export class ProductsFormPage implements OnInit {
     private productsService: ProductsService,
     private router: Router,
     private languageService: LanguageService,
-    private activatedRoute: ActivatedRoute,
+    private route: ActivatedRoute,
     private messageService: MessageService
   ) {
     this.initForm();
@@ -37,6 +37,9 @@ export class ProductsFormPage implements OnInit {
   }
 
   ngOnInit(): void {
+    this.route.params.subscribe((params) => {
+      this.productId = params['productId'];
+    });
     this.productsService.getProductUpdateListener().subscribe({
       next: (res) => {
         this.messageService.add({
