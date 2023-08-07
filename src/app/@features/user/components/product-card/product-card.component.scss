@@ -1,11 +1,12 @@
 :host {
   .product-card {
-    border: 2px solid #d6d6d6;
     border-radius: 5px;
     height: 440px;
     margin-bottom: 15px;
     padding: 10px;
     cursor: pointer;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+
     .image {
       text-align: center;
       margin-bottom: 10px;
@@ -22,7 +23,7 @@
         transition: all 0.3s ease-in-out;
         margin: 0;
         text-transform: uppercase;
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
     }
     .category {
@@ -32,6 +33,7 @@
         margin: 0;
         color: #d6d6d6;
         text-transform: capitalize;
+        font-size: 1.2rem;
       }
     }
     .price {
